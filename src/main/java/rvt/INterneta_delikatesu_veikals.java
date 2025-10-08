@@ -14,6 +14,7 @@ public class INterneta_delikatesu_veikals {
 
         System.out.print("Ekspress piegāde (0==ne, 1==ja): ");
         Integer ekspress = Integer.valueOf(scanner.nextLine());
+        scanner.close();
 
         Double maksa = 0.00;
         

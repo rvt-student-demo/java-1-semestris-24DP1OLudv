@@ -29,6 +29,7 @@ public class Repeating_breaking {
                 odd++;
             }
         }
+        scanner.close();
 
         System.out.println("Thx! Bye!");
         System.out.println("Sum: " + summa);

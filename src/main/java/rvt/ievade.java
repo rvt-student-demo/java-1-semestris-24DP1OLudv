@@ -17,6 +17,7 @@ public class ievade {
             reizes++;
             summa += jauta;  
         } 
+        scanner.close();
         System.out.println("Skaitlu skaitli: " + (reizes + 1));
         System.out.println("Skaitlu summa: " + summa);
 

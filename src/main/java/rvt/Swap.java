@@ -27,6 +27,7 @@ public class Swap {
             System.out.println(skaitli[i]);
             i++;
         }
+        scanner.close();
 
         
     }

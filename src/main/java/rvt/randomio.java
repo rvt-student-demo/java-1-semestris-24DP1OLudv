@@ -3,7 +3,6 @@ package rvt;
 import java.util.Random;
 import java.util.Scanner;
 
-import javax.swing.plaf.TreeUI;
 
 public class randomio {
     public static void main(String[] args) {
@@ -13,7 +12,7 @@ public class randomio {
 
         System.out.println("Es iedomasos skaitli no 1 - 10 \nTev tas jauzmin tris meginajumos. \nIevadi minejumu:");
 
-        int skait = 0;
+        
         Boolean p_minejums = false;
 
         for (int i = 0; i < 3; i++) {
@@ -32,6 +31,7 @@ public class randomio {
             }
 
         }
+        scanner.close();
 
         if (p_minejums != true) {
             System.out.println("Tu esi zaudeejis!");

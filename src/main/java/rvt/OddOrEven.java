@@ -8,6 +8,7 @@ public class OddOrEven {
 
         System.out.println("Iedod numuru:");
         int numurs = Integer.valueOf(scanner.nextLine());
+        scanner.close();
 
         if (numurs % 2 == 0) {
             System.out.println("Number " + numurs + " is even");

@@ -14,6 +14,7 @@ public class Piegades_parbaude {
 
         System.out.print("Paplaksnu skaits: ");
         int paplaksnes = Integer.valueOf(scanner.nextLine());
+        scanner.close();
 
         String parbaude = "";
 
