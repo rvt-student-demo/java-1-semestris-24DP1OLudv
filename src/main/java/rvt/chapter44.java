@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class chapter44 {
     public static void main(String[] args) {
-        ex1();
+        ex2();
     }
     
     public static void ex1() {
@@ -14,14 +14,30 @@ public class chapter44 {
         String name = String.valueOf(scanner.nextLine());
 
         int start = name.indexOf(" ");
-        int last = name.lastIndexOf(name);
-        String uppercase = name.substring(start, last);
-        uppercase.toUpperCase();
-        String first_start = name.substring(1, start);
 
-        String final_name = first_start.concat(uppercase);
+        String first_name = name.substring(0, start);
 
-        System.out.println(name);
+        String surname = name.substring(start);
+        String uppercase = surname.toUpperCase();
+        
+        String complete_name = first_name.concat(uppercase);
+
+        System.out.println(complete_name);
+        scanner.close();
+    }
+    public static void ex2() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter a string: ");
+        String echoing = String.valueOf(scanner.nextLine());
+
+        int until = echoing.length();
+
+        for (int i = 0; i < until; i++) {
+            System.out.println(echoing.charAt(i));
+        }
+    }
+    public static void ex3() {
         
     }
 }
